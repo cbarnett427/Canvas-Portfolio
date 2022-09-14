@@ -1,117 +1,123 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Clayton | Home</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
 
-        <title>Responsive menu ui</title>
-    </head>
-    <body>
-        <!--=============== NAV ===============-->
-        <nav class="nav" id="nav">
-            <div class="nav__menu container" id="nav-menu">
-                <div class="nav__shape"></div>
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
 
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-                
-                <div class="nav__data">
-                    <div class="nav__mask">
-                        <!-- Change your profile picture -->
-                        <img src="" alt="" class="nav__img">
-                    </div>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
 
-                    <span class="nav__greeting">Hi, I'm</span>
-                    <h1 class="nav__name">Clayton <br> Barnett</h1>
-                </div>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stars.css">
+	<!-- ========== External Links ========== -->
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
 
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home' ></i> Home 
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-bookmark'></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-message-square-detail'></i> Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body id="home">
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <nav>
+  
+        <div class="navbar-wrapper">
+          <div class="img-logo" id="img-logo">
+            <a href="#"><span class="fas fa-hamburger"></span></a>
+          </div>
+          <div>
+            <!-- Hamburger Links -->
+            <ul class="nav-menu" id="nav-menu">
+               <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+               <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-        <!--=============== MAIN ===============-->
-        <main class="main" id="main">
-            <!--=============== HEADER ===============-->
-            <header class="header" id="header">
-                <nav class="header__nav container">
-                    <a href="#" class="header__logo">
-                        Clayton
-                    </a>
+
+  <div id="stars"></div>
+  <section class="home">
+    <div class="home-header">
+      <div class="center-content">
+        <h1 class="animated animated-text">
+          <span>Hello, I'm</span>
+          <div class="animated-info">
+          <span class="animated-item">Clayton Barnett</span>
+          <span class="animated-item">a Web Developer</span>
+          <span class="animated-item">a System Admin</span>
+          <span class="animated-item">a Programmer</span>
+          </div>
+        </h1>
+        <h3>Passionate about changing the world with technology.</h3>
+        <a href="#" class="button">Learn More <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </div>
     
-                    <!-- Toggle button -->
-                    <div class="header__toggle" id="header-toggle">
-                        <i class='bx bx-grid-alt'></i>
-                    </div>
-                </nav>
-            </header>
+    <footer class="home-footer">
+      <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+  </section>
+  <!--===== About Section =====-->
+  <section class="about section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about_row container">
+        <div class="about_column">
+            <div class="about_img">
+                <img src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="">
+            </div>
+        </div>
+        <div class="about_column">
+            <h2 class="about_subtitle">Software Developer</h2>
+            <p class="about_text"> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.<p>
 
-
-            <!-- When inserting your content into sections, remove the section__height class -->
-            <!--=============== HOME ===============-->
-            <section class="section section__height container" id="home">
-                <h1>HOME</h1>
-                
-            </section>
-
-            <!--=============== ABOUT ===============-->
-            <section class="section section__height container" id="about">
-                <h1>ABOUT</h1>
-                
-            </section>
-
-            <!--=============== PORTFOLIO ===============-->
-            <section class="section section__height container" id="portfolio">
-                <h1>PORTFOLIO</h1>
-                
-            </section>
-
-            <!--=============== SKILLS ===============-->
-            <section class="section section__height container" id="skills">
-                <h1>SKILLS</h1>
-                
-            </section>
-
-            <!--=============== CONTACT ===============-->
-            <section class="section section__height container" id="contact">
-                <h1>CONTACT</h1>
-
-            </section>
-        </main>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <p class="about_text">In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
+            <a href="#" class="button">Resume</a>
+        </div>
+    </div>
+</section>
+  
+  <!-- your content here... -->
+  <script src="js/scripts.js"></script>
+  <script>
+  window.onscroll = function() {scrollFunction()};
+ 
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      
+      document.getElementById("navbar").style.background = "#fff";
+      document.getElementById("nav-menu").style.color = "#3f3f46";
+      document.getElementById("img-logo").style.color = "#3f3f46";
+    } else {
+    
+      document.getElementById("navbar").style.background = "none";
+      document.getElementById("nav-menu").style.color = "#fff";
+      document.getElementById("img-logo").style.color = "#fff";
+    }
+  }
+</script>
+</body>
 </html>
