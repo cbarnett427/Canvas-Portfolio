@@ -26,6 +26,10 @@
 	<!-- ========== External Links ========== -->
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- ===== REMIX ICONS ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Dev Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body id="home">
@@ -33,17 +37,17 @@
     <div class="container">
       <nav>
   
-        <div class="navbar-wrapper">
-          <div class="img-logo" id="img-logo">
+        <div class="nav-wrapper">
+          <div class="nav-logo" id="nav-logo">
             <a href="#"><span class="fas fa-hamburger"></span></a>
           </div>
           <div>
-            <!-- Hamburger Links -->
             <ul class="nav-menu" id="nav-menu">
                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+               <li class="nav-item"><i class="nav-link ri-moon-line change-theme" id="theme-button"></i></li>
             </ul>
           </div>
           <div class="hamburger">
@@ -54,52 +58,38 @@
         </div>
       </nav>
     </div>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
   </header>
 
-
-
-  <section class="home">
-    <div class="home-header">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <section class="hero">
+    <div class="hero_wrapper">
       <div>
         <h1>Hello, I'm</h1>
-        <h1 class="animated">
+        <h1 class="hero_animated">
           <span>Clayton Barnett</span>
           <span>a Web Developer</span>
           <span>a Software Developer</span>
           <span>a Systems Administrator</span>
         </h1>
-        <!-- <h1>
-          <div class="row">
-            <div class="column1">
-              <p>Hello, I'm&nbsp;</p>
-            </div>
-            <div class="column2">
-              <span>Clayton Barnett</span>
-              <span>a Web Developer</span>
-              <span>a System Admin</span>
-              <span>a Programmer</span>
-            </div>
-          </div>
-        </h1> -->
-        <h3>Passionate about changing the world with technology.</h3>
-        <div class="learn_more center">
+        <h3>Passionate about changing the world with technology</h3>
+        <div class="hero_learn_more center">
           <a href="#about" class="button">Learn More <i class="fa-solid fa-arrow-down"></i></a>
         </div>
       </div>
     </div>
     
-    <footer class="home-footer">
+    <footer class="hero_footer">
       <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github"></i></a>
       <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-twitter"></i></a>
     </footer>
   </section>
-  <!--===== About Section =====-->
-  <section class="about section" id="about">
-    <h2 class="section-title">About</h2>
+
+
+  <!-- ========== About Section ========== -->
+  <section class="section about" id="about">
     <div class="about_row container">
         <div class="about_column">
             <div class="about_img">
@@ -107,14 +97,65 @@
             </div>
         </div>
         <div class="about_column">
-            <h2 class="about_subtitle">Software Developer</h2>
+            <h2 class="about_subtitle">About Me</h2>
             <p class="about_text"> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.<p>
 
             <p class="about_text">In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
             <a href="#" class="button">Resume</a>
         </div>
     </div>
-</section>
+  </section>
+
+
+  <!-- ========== Skills & Tools Section ========== -->
+	<section class="skills section" id="skills">
+		<div class="skills_wrapper container reveal">
+			<h2 class="highlight">Skills &amp; Tools</h2>
+			<p>The knowledge, resources, and technologies I use:</p>
+			<div class="container-icons">
+				<div class="box-icon">
+					<i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+					<p>HTML5</p>
+				</div>
+				<div class="box-icon">
+					<i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+					<p>CSS3</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-javascript-plain" aria-hidden="true"></i>
+					<p>JavaScript</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
+					<p>Bootstrap</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-vscode-plain" aria-hidden="true"></i>
+					<p>VS Code</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-python-plain" aria-hidden="true"></i>
+					<p>Python</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-pandas-original" aria-hidden="true"></i>
+					<p>Pandas</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-cplusplus-plain-wordmark" aria-hidden="true"></i>
+					<p>C++</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-linux-plain" aria-hidden="true"></i>
+					<p>Linux</p>
+				</div>
+				<div class="box-icon"> 
+					<i class="devicon devicon-github-plain" aria-hidden="true"></i>
+					<p>Github</p>
+				</div>
+			</div>
+		</div>
+	</section>
   
   <!-- your content here... -->
   <script src="js/script.js"></script>
@@ -126,12 +167,12 @@
       
       document.getElementById("navbar").style.background = "#fff";
       document.getElementById("nav-menu").style.color = "#3f3f46";
-      document.getElementById("img-logo").style.color = "#3f3f46";
+      document.getElementById("nav-logo").style.color = "#3f3f46";
     } else {
     
       document.getElementById("navbar").style.background = "none";
       document.getElementById("nav-menu").style.color = "#fff";
-      document.getElementById("img-logo").style.color = "#fff";
+      document.getElementById("nav-logo").style.color = "#fff";
     }
   }
 </script>
