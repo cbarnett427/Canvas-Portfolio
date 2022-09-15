@@ -18,19 +18,18 @@ function closeMenu() {
 }
 
 
-// On Scroll
-// window.onscroll = function() {scrollFunction()};
- 
-//   function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      
-//       document.getElementById("navbar").style.background = "#fff";
-//       document.getElementById("nav-menu").style.color = "#3f3f46";
-//       document.getElementById("img-logo").style.color = "#3f3f46";
-//     } else {
-    
-//       document.getElementById("navbar").style.background = "none";
-//       document.getElementById("nav-menu").style.color = "#fff";
-//       document.getElementById("img-logo").style.color = "#fff";
-//     }
-//   }
+// Word Rotation Interval
+setInterval(function () {
+  const show = document.querySelector('span[data-show]')
+  const next = show.nextElementSibling || document.querySelector('span:first-child')
+  const up = document.querySelector('span[data-up]')
+  
+  if (up) {
+    up.removeAttribute('data-up')
+  }
+  
+  show.removeAttribute('data-show')
+  show.setAttribute('data-up', '')
+  
+  next.setAttribute('data-show', '')
+}, 2000)

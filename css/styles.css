@@ -21,6 +21,12 @@ body {
     margin-left: auto;
     max-width: 72rem;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
   .button {
     font-family: 'Rubik', sans-serif;
     padding: 15px 25px;
@@ -68,8 +74,8 @@ body {
     padding: 0 1em;
     box-sizing: border-box;
     color: white;
-    background: linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
-    animation: gradient 70s ease infinite alternate-reverse;
+    background: linear-gradient(136deg, rgb(68, 132, 206), rgb(26,176,215), rgb(255,209,124), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%;
+    animation: gradient 60s ease-out infinite alternate-reverse;
   }
   .home-header {
     position: relative;
@@ -83,52 +89,106 @@ body {
     text-transform: uppercase;
     font-size: 3.4rem;
     font-weight: 500;
-    margin: 0 auto 1.25rem;
-    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
   }
   .home-header h3 {
     font-family: 'Karla', sans-serif;
-    margin: 0 auto 2.5rem;
     font-weight: normal;
   }
   .home-header a {
     font-family: 'Karla', sans-serif;
-    margin: 0 auto;
   }
-  .animated {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .animated-info {
+  
+  .animated span {
     display: inline-block;
     vertical-align: top;
-    min-width: 45%;
-    position: relative;
-  }
-
-  .animated-item {
-    text-align: left;
     color: #3F3F46;
-    line-height: inherit;
-    display: block;
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     animation: BottomTotop 8s linear infinite 0s;
   }
-  .animated-item:nth-child(2n+2) {
+  .animated span:nth-child(2n+2) {
     animation-delay: 2s;
   }
-  .animated-item:nth-child(3n+3) {
+  .animated span:nth-child(3n+3) {
     animation-delay: 4s;
   }
-  .animated-item:nth-child(4n+4) {
+  .animated span:nth-child(4n+4) {
     animation-delay: 6s;
   }
+
+/* ========== ABOUT =========== */
+/* Create two equal columns */
+/* .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.column1 {
+	-ms-flex-preferred-size: 40%;
+	flex-basis: 40%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  text-align: right;
+}
+.column2 {
+	-ms-flex-preferred-size: 63%;
+	flex-basis: 63%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  text-align: left;
+}
+  
+@media screen and (max-width: 600px) {
+	.row {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+  .column2 span {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .column2 span {
+    color: #3F3F46;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    animation: BottomTotop 8s linear infinite 0s;
+  }
+  .column2 span:nth-child(2n+2) {
+    animation-delay: 2s;
+  }
+  .column2 span:nth-child(3n+3) {
+    animation-delay: 4s;
+  }
+  .column2 span:nth-child(4n+4) {
+    animation-delay: 6s;
+  } */
+/*Footer*/
+h3{
+color: #fff;
+font-size: 30px;
+margin-top: 2rem;
+text-align: center;
+}
   .home-footer {
     z-index: 100;
   }
@@ -150,12 +210,9 @@ body {
   #twitter:hover {
     color: #00acee;
   }
-  .center-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    }
+  .learn_more {
+    margin: 2rem 0;
+  }
   .home-footer {
     display: flex;
     margin-bottom: 1em;
