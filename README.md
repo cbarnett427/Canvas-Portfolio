@@ -1,7 +1,18 @@
-## 📱 Create Responsive Navbar 
+# A Developer Portfolio Under Development
 
-- Responsive Navbar Using HTML CSS & JavaScript
-- Beautiful panel with names and user image.
-- Smooth scrolling in each section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+## Created using
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+
+## License
+
+This project is licensed under the GPLv3 License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+* [Google Fonts](https://fonts.google.com/) - Fonts used
+* [Font Awesome](https://fontawesome.com/?from=io/) - Icons used
+* [Box Icons](https://boxicons.com/) - Icons used
+* [Dev Icons](https://devicon.dev/) - Icons used
