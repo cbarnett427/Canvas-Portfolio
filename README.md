@@ -1,6 +1,7 @@
 <div align="center">
 <h1>Canvas Portfolio</h1>
-<i>A Developer Portfolio Under Development, that works with GitHub Pages.</i>
+<i>A Developer Portfolio Under Development, that works with GitHub Pages.</i><br>
+<a href="https://cbarnett427.github.io/Canvas-Portfolio/"><b>Live Demo</b></a>
 <h2 align="center">
   <img src="https://github.com/cbarnett427/Canvas-Portfolio/blob/main/img/CanvasExample2.png" alt="Canvas Portfolio"/>
   <sub><sup>© 2022 Canvas Portfolio - Licensed under the <a href="./LICENSE">GPLv3 License</a>.</sup></sub>
