@@ -18,4 +18,4 @@
 ## Advantages :loudspeaker:
 :dart: Professional way to showcase your work\
 :dart: Increases your visibility and online presence\
-:dart: Shows you’re more than just a resume\
+:dart: Shows you’re more than just a resume
