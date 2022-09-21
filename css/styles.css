@@ -645,7 +645,8 @@ section {
   clear: both;
 }
 .portfolio_row p {
-  margin: .5rem 0;
+	margin: .5rem 0;
+	text-align: justify;
 }
 .portfolio_left {
   text-align: right;
