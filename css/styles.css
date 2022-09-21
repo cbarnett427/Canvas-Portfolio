@@ -129,14 +129,13 @@ section {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
-/* Call to Action Button */
+/* Source Code Button */
 .button-6 {
   align-items: center;
   background-clip: padding-box;
   background-color: none;
   border: 1px solid transparent;
   border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #3F3F46;
   cursor: pointer;
@@ -171,6 +170,12 @@ section {
   background-color: none;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+}
+.portfolio_left .no_demo {
+  padding: .875rem 0 .875rem 1.5rem;
+}
+.portfolio_right .no_demo {
+  padding: .875rem 1.5rem .875rem 0;
 }
 
 /* ========== Navigation Section ========== */
