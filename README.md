@@ -3,7 +3,7 @@
 <i>A Developer Portfolio Currently Under Development, that works with GitHub Pages.</i><br>
 <a href="https://cbarnett427.github.io/Canvas-Portfolio/"><b>Live Demo</b></a>
 <h2 align="center">
-  <img src="https://github.com/cbarnett427/Canvas-Portfolio/blob/main/img/CanvasExample2.png" alt="Canvas Portfolio"/>
+  <img src="https://github.com/cbarnett427/Canvas-Portfolio/blob/main/img/CanvasExample1.png" alt="Canvas Portfolio"/>
   <sub><sup>© 2022 Canvas Portfolio - Licensed under the <a href="./LICENSE">GPLv3 License</a>.</sup></sub>
   <br>
 </h2>
