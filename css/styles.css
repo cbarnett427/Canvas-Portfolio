@@ -162,13 +162,10 @@ section {
 .button-6:hover,
 .button-6:focus {
   text-shadow: 0 0 .3px #3F3F46, 0 0 .3px #3F3F46;
-  /* use the line below if you want a more intense effect */
-  /* text-shadow: 0 0 .7px #3F3F46, 0 0 .7px #3F3F46, 0 0 .7px #3F3F46; */
 }
 
 .button-6:active {
   background-color: none;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
 .portfolio_left .no_demo {
