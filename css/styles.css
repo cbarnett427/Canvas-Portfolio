@@ -66,8 +66,7 @@ section {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* max-width: 72rem; */
-  max-width: 80rem;
+  max-width: 100rem;
 }
 .center {
   display: flex;
