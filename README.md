@@ -14,8 +14,3 @@
 :star: Valid HTML5 & CSS3\
 :star: Organized documentation\
 :star: Styled with Vanilla CSS
-
-## Advantages :loudspeaker:
-:dart: Professional way to showcase your work\
-:dart: Increases your visibility and online presence\
-:dart: Shows you’re more than just a resume
