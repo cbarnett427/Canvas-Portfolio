@@ -324,7 +324,6 @@ img {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
-  /* padding-bottom: 3.75rem; */
 }
 /* Create 2 equal columns */
 .about_row {
@@ -344,7 +343,7 @@ img {
   flex-basis: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          /* padding: 0 20px 20px 20px; */
+
 }
 .about_img img {
   display:block;
@@ -663,7 +662,6 @@ img {
   background: #f6f6f6;
   z-index: 1;
   position: relative;
-  /* padding-top: 2rem; */
 }
 .portfolio h2 {
   text-align: center;
@@ -697,7 +695,7 @@ img {
   text-align: right;
 	-ms-flex-preferred-size: 50%;
 	flex-basis: 50%;
-	padding: 0 20px;
+	padding-right: 20px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -708,7 +706,7 @@ img {
   text-align: left;
 	-ms-flex-preferred-size: 50%;
 	flex-basis: 50%;
-	padding: 0 20px;
+	padding-left: 20px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
