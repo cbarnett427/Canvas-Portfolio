@@ -36,7 +36,7 @@
 </head>
 
 
-<body id="home">
+<body>
   <header class="navbar" id="navbar">
     <div class="container">
       <nav>
@@ -47,7 +47,7 @@
           </div>
           <div>
             <ul class="nav-menu" id="nav-menu">
-               <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -65,7 +65,7 @@
   </header>
 
   
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero_wrapper">
       <div id="stars"></div>
       <div id="stars2"></div>
@@ -96,11 +96,11 @@
   <section class="about" id="about">
     <div class="about_row container">
         <div class="about_column">
-            <div class="about_img">
+            <div class="about_img reveal">
                 <img src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="">
             </div>
         </div>
-        <div class="about_column">
+        <div class="about_column reveal">
             <h3>About Me</h3>
             <p class="about_text">I'm a software developer and systems administrator, specializing in software and web development, hardware installation, software troubleshooting, and network configuration.<p>
 
@@ -113,7 +113,7 @@
 
   <!-- ========== Skills & Tools Section ========== -->
 	<section class="toolkit" id="toolkit">
-		<div class="toolkit_wrapper container">
+		<div class="toolkit_wrapper container reveal">
 			<h3>My Toolkit</h3>
 			<p>The knowledge, resources, and technologies I use:</p>
 			<div class="container-icons">
@@ -165,7 +165,7 @@
   <div id="stars2"></div>
   <div id="stars3"></div>
   <!-- ========== Tabs Section ========== -->
-  <section class="skills container" id="skills">
+  <section class="skills container reveal" id="skills">
 		<div id="tsum-tabs">
       
       <main>
@@ -270,7 +270,7 @@
 
   <section class="portfolio section" id="portfolio">
     <div class="container">
-      <div class="portfolio_row">
+      <div class="portfolio_row reveal">
         <div class="portfolio_left">
           <h3>Canvas Portfolio</h3>
           <h4>Web Development</h4>
@@ -282,7 +282,7 @@
             <img src="img/CanvasExample.png" alt="" />
         </div>
       </div>
-      <div class="portfolio_row">
+      <div class="portfolio_row reveal">
         <div class="portfolio_left">
           <img src="img/UpspringExample.png" alt="" />
         </div>
@@ -294,7 +294,7 @@
           <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Upspring-Portfolio"> Source Code </a>
         </div>
       </div>
-      <div class="portfolio_row">
+      <div class="portfolio_row reveal">
         <div class="portfolio_left">
           <h3>Horizon Portfolio</h3>
           <h4>Web Development</h4>
@@ -306,7 +306,7 @@
             <img src="img/HorizonExample.png" alt="" />
         </div>
     </div>
-    <div class="portfolio_row">
+    <div class="portfolio_row reveal">
       <div class="portfolio_left">
         <img src="img/PyxifyExample.png" alt="" />
       </div>
