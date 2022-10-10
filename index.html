@@ -1,172 +1,293 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clayton Barnett | Developer</title>
   <meta name="description" content="A Developer Portfolio">
   <meta name="author" content="Clayton Barnett">
 
   <meta property="og:title" content="A Developer Portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
+  <meta property="og:url" content="claytonbarnett.com">
   <meta property="og:description" content="Developer Portfolio">
-  <meta property="og:image" content="image.png">
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="img/code-solid.svg">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/code-solid.svg">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/code-solid.svg">
-  
+  <!-- Internal Links -->
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/code-solid.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/code-solid.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/code-solid.svg">
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/stars.css">
-	<!-- ========== External Links ========== -->
-	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js" async></script>
+  <script src="/js/contact.js" async></script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/stars.css">
+
+  <!-- External Links -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <!-- ===== REMIX ICONS ===== -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <!-- Dev Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
-
 <body>
-  <header class="navbar" id="navbar">
-    <div class="container">
-      <nav>
-  
-        <div class="nav-wrapper">
-          <div class="nav-logo" id="nav-logo">
-            <a href="#"><span class="fa-solid fa-code"></span></a>
+   <header>
+      <nav class="navbar" id="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="nav-logo" id="nav-logo">
+              <a href="#"><span class="fa-solid fa-code"></span></a>
+            </div>
+            <div>
+              <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <!-- <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li> -->
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link nav-link--btn btn--show-modal" href="#">Contact</a></li>
+                <li class="nav-item"><i class="nav-link ri-moon-line change-theme" id="theme-button"></i></li>
+              </ul>
+              <div class="hamburger">
+                <div class="wrapper-menu">
+                  <div class="line-menu half start"></div>
+                  <div class="line-menu"></div>
+                  <div class="line-menu half end"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <ul class="nav-menu" id="nav-menu">
-               <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-               <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-               <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-               <li class="nav-item"><i class="nav-link ri-moon-line change-theme" id="theme-button"></i></li>
-            </ul>
-          </div>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-         </div>
         </div>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  
-  <section class="hero" id="home">
-    <div class="hero_wrapper">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div>
-        <h1>Hello, I'm</h1>
-        <h1 class="hero_animated">
-          <span>Clayton Barnett</span>
-          <span>a Web Developer</span>
-          <span>a Software Developer</span>
-          <span>a Systems Administrator</span>
-        </h1>
-        <h3>Passionate Systems Administrator and Developer</h3>
-        <div class="hero_learn_more center">
-          <a href="#about" class="button-5">Learn More&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+    <!-- ========== Hero Section ========== -->
+    <section class="hero" id="home">
+        <div class="hero_wrapper">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+          <div>
+            <h1>Hello, I'm</h1>
+            <h1 class="hero_animated">
+              <span>Clayton Barnett</span>
+              <span>a Web Developer</span>
+              <span>a Software Developer</span>
+              <span>a System Administrator</span>
+            </h1>
+            <h2>A Passionate Developer and System Administrator</h2>
+            <div class="hero_learn_more center">
+              <a href="#about" class="button-5">Learn More&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+        <footer class="hero_footer">
+          <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+        </footer>
+      </section>
+
+
+    <!-- ========== About Section ========== -->
+    <section class="about reveal" id="about">
+        <div class="about_row container reveal">
+          <div class="about_column">
+                <div class="about_img">
+                    <img src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="">
+                </div>
+          </div>
+          <div class="about_column">
+            <h3>About Me</h3>
+              <p class="about_text">I'm a software developer and system administrator, specializing in software and web development, hardware installation, software troubleshooting, and network configuration.</p>
+              <p class="about_text">I have 15+ years of experience working with computers, and 6+ years in programming. I'm curious by nature and I'm always trying to keep up with the latest technology trends. If you're looking for someone to help with your projects, get in touch!</p>
+              <a rel="noreferrer" target="_blank" href="#" class="button-5 nav-link--btn btn--show-modal">Get In Touch</a>
+              <a rel="noreferrer" target="_blank" href="resume.html" class="button-5">My Resume</a>
+          </div>
+        </div>
+
+        <!-- ========== Skills & Tools Section ========== -->
+        <h3 class="box_title container reveal">My Toolkit</h3>
+        <p class="box_subtext container reveal">The knowledge, resources, and technologies I use:</p>
+        <div class="box_wrapper container reveal">
+          <div class="box_container">
+            <div class="box">
+              <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="box">
+              <i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-javascript-plain" aria-hidden="true"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-vscode-plain" aria-hidden="true"></i>
+              <p>VS Code</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-python-plain" aria-hidden="true"></i>
+              <p>Python</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-pandas-original" aria-hidden="true"></i>
+              <p>Pandas</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-cplusplus-plain-wordmark" aria-hidden="true"></i>
+              <p>C++</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-linux-plain" aria-hidden="true"></i>
+              <p>Linux</p>
+            </div>
+            <div class="box"> 
+              <i class="devicon devicon-github-plain" aria-hidden="true"></i>
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="resume" id="resume">
+      <div class="container">
+          <div class="row reveal">
+            <div>
+              <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2020</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Data Analyst</span><small>TJ Inspection, Inc.</small></h3>
+                              <p>Developed applications and industry-specific software; designed and developed custom user interfaces. I provided workstation system hardware and software support. Create detailed ad-hoc reports for tracking and management of company data.</p>
+                          </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span>2018</span>
+                        </div>
+                        <div class="timeline-info">
+                            <h3><span>Programmer</span><small>Dallas Baptist University</small></h3>
+                            <p>Responsible for creating ad-hoc reports using SQL and Entrinsik Informer, and also providing ad-hoc report support as well as technical hardware and software support for instructors. Consulted with team members and provided feedback on features and best practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span>2017</span>
+                        </div>
+                        <div class="timeline-info">
+                            <h3><span>IT Technician II</span><small>Dallas Baptist University</small></h3>
+                            <p>Managed campus-wide systems administration and maintained IT systems and classrooms. Management of SCCM tickets and student accounts was done through Active Directory. Delivered technical support to university students, remote users, and faculty on campus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+              <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2020</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>Dallas Baptist University</span><small>BS, Computer Information Science</small></h3>
+                              <p>Learn all of the major Web Development technologies such as HTML5, Bootstrap, CSS3, JQuery, and others. Understand all the powerful concepts, logic, and algorithms of computer science.</p>
+                          </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                            <span>2017</span>
+                        </div>
+                        <div class="timeline-info">
+                            <h3><span>Paris Junior College</span><small>AS, General Studies</small></h3>
+                            <p>While completing my basics, I learned the fundamentals of programming, as well as computer hardware and software, and networking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+      </div>
+  </section>
+    <!-- ========== Skills & Tools Section ========== -->
+    
+    <!-- <section class="toolkit" id="toolkit">
+      <h3 class="title container reveal">My Toolkit</h3>
+      <p class="subtext container reveal">The knowledge, resources, and technologies I use:</p>
+      <div class="toolkit_wrapper container reveal">
+        <div class="box-container">
+          <div class="box">
+            <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="box">
+            <i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-javascript-plain" aria-hidden="true"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-vscode-plain" aria-hidden="true"></i>
+            <p>VS Code</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-python-plain" aria-hidden="true"></i>
+            <p>Python</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-pandas-original" aria-hidden="true"></i>
+            <p>Pandas</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-cplusplus-plain-wordmark" aria-hidden="true"></i>
+            <p>C++</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-linux-plain" aria-hidden="true"></i>
+            <p>Linux</p>
+          </div>
+          <div class="box"> 
+            <i class="devicon devicon-github-plain" aria-hidden="true"></i>
+            <p>Github</p>
+          </div>
         </div>
       </div>
-    </div>
-    <footer class="hero_footer">
-      <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github"></i></a>
-      <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-twitter"></i></a>
-    </footer>
-  </section>
+    </section> -->
 
 
-  <!-- ========== About Section ========== -->
-  <section class="about" id="about">
-    <div class="about_row container">
-        <div class="about_column">
-            <div class="about_img reveal">
-                <img src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="">
-            </div>
-        </div>
-        <div class="about_column reveal">
-            <h3>About Me</h3>
-            <p class="about_text">I'm a software developer and systems administrator, specializing in software and web development, hardware installation, software troubleshooting, and network configuration.<p>
-
-            <p class="about_text">I've been working with computers for over 15 years, and programming for 6 years. If you're looking for someone to help with your systems, get in touch!</p>
-            <a rel="noreferrer" target="_blank" href="resume.html" class="button-5">Resume&nbsp;&nbsp;<i class="fa-solid fa-file-lines"></i></a>
-        </div>
-    </div>
-  </section>
+    <!-- <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div> -->
 
 
-  <!-- ========== Skills & Tools Section ========== -->
-	<section class="toolkit" id="toolkit">
-		<div class="toolkit_wrapper container reveal">
-			<h3>My Toolkit</h3>
-			<p>The knowledge, resources, and technologies I use:</p>
-			<div class="container-icons">
-				<div class="box-icon">
-					<i class="devicon devicon-html5-plain" aria-hidden="true"></i>
-					<p>HTML5</p>
-				</div>
-				<div class="box-icon">
-					<i class="devicon devicon-css3-plain" aria-hidden="true"></i>
-					<p>CSS3</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-javascript-plain" aria-hidden="true"></i>
-					<p>JavaScript</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
-					<p>Bootstrap</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-vscode-plain" aria-hidden="true"></i>
-					<p>VS Code</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-python-plain" aria-hidden="true"></i>
-					<p>Python</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-pandas-original" aria-hidden="true"></i>
-					<p>Pandas</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-cplusplus-plain-wordmark" aria-hidden="true"></i>
-					<p>C++</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-linux-plain" aria-hidden="true"></i>
-					<p>Linux</p>
-				</div>
-				<div class="box-icon"> 
-					<i class="devicon devicon-github-plain" aria-hidden="true"></i>
-					<p>Github</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
-  <!-- ========== Tabs Section ========== -->
-  <section class="skills container reveal" id="skills">
-		<div id="tsum-tabs">
+    <!-- ========== Tabs Section ========== -->
+    <!-- <section class="skills container reveal" id="skills">
+      <h3>My Skills</h3>
+      <div id="tsum-tabs">
       
       <main>
       <input id="tab1" type="radio" name="tabs" checked>
@@ -178,7 +299,7 @@
       <section id="content1">
         <div class="row">
           <div class="column">
-            <div class="skills">
+            <div>
               <div class="skill-name">HTML5</div>
               <div class="skill-bar">
                 <div class="skill-per fill_bar animated" per="100%" style="max-width:100%"></div>
@@ -198,7 +319,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="skills">
+            <div>
               <div class="skill-name">Github</div>
               <div class="skill-bar">
                 <div class="skill-per fill_bar animated" per="100%" style="max-width:100%"></div>
@@ -222,7 +343,7 @@
       <section id="content2">
         <div class="row">
           <div class="column">
-            <div class="skills">
+            <div>
               <div class="skill-name">Goal Oriented</div>
               <div class="skill-bar">
                 <div class="skill-per fill_bar animated" per="100%" style="max-width:100%"></div>
@@ -233,16 +354,16 @@
               </div>
               <div class="skill-name">Adaptability</div>
               <div class="skill-bar">
-                <div class="skill-per fill_bar animated" per="90%" style="max-width:90%"></div>
+                <div class="skill-per fill_bar animated" per="85%" style="max-width:85%"></div>
               </div>
               <div class="skill-name">Positivity</div>
               <div class="skill-bar">
-                <div class="skill-per fill_bar animated" per="85%" style="max-width:85%"></div>
+                <div class="skill-per fill_bar animated" per="90%" style="max-width:90%"></div>
               </div>
             </div>
           </div>
           <div class="column">
-            <div class="skills">
+            <div>
               <div class="skill-name">Problem Solving</div>
               <div class="skill-bar">
                 <div class="skill-per fill_bar animated" per="100%" style="max-width:100%"></div>
@@ -263,82 +384,103 @@
           </div>
         </div>
       </section>
-		</div>
-  </main>
-	</section>
-	
+      </div>
+      </main>
+    </section> -->
 
-  <section class="portfolio section" id="portfolio">
-    <div class="container">
-      <div class="portfolio_row reveal">
-        <div class="portfolio_left">
-          <h3>Canvas Portfolio</h3>
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. </p>
-          <a rel="noreferrer" target="_blank" class="button-5" href="https://cbarnett427.github.io/Canvas-Portfolio/"> See Live </a>
-          <a rel="noreferrer" target="_blank" class="button-6 no_demo" href="https://github.com/cbarnett427/Canvas-Portfolio"> Source Code </a>
+
+    <!-- ========== Tabs Section ========== -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="reveal">Featured Projects</h2>
+      <div class="container">
+        <div class="portfolio_row reveal">
+          <div class="portfolio_left">
+            <h3>Canvas Portfolio</h3>
+            <h4>Web Development</h4>
+            <p>Canvas Portfolio is my current developer portfolio to display my projects, personality and talents. Created exclusively with HTML5, CSS3, JavaScript and PHP. Canvas Portfolio features gradient, pixel and text animations, responsive navigation, light and dark themes, printable HTML resume and contact form that are 100% HTML and standalone without any extra plugins or installations. </p>
+            <a rel="noreferrer" target="_blank" class="button-5" href="https://cbarnett427.github.io/Canvas-Portfolio/"> See Live </a>
+            <a rel="noreferrer" target="_blank" class="button-6 no_demo" href="https://github.com/cbarnett427/Canvas-Portfolio"> Source Code </a>
+          </div>
+          <div class="portfolio_right">
+              <img src="img/CanvasExample.png" alt="" />
+          </div>
         </div>
-        <div class="portfolio_right">
-            <img src="img/CanvasExample.png" alt="" />
+        <div class="portfolio_row reveal">
+          <div class="portfolio_left">
+            <img src="img/UpspringExample.png" alt="" />
+          </div>
+          <div class="portfolio_right">
+            <h3>Upspring Portfolio</h3>
+            <h4>Web Development</h4>
+            <p>Upspring Portfolio was built for web developers that want to showcase their portfolio on the web. Cross-browser compatible, touch-friendly and lightweight, Upspring is perfect for users wanting an HTML5 driven portfolio with responsive design across several devices. Built using HTML5, CSS3 and PHP. The contact form works with any major email service provider, light and dark themes included. </p>
+            <a rel="noreferrer" target="_blank" class="button-5" href="https://cbarnett427.github.io/Upspring-Portfolio/"> See Live </a>
+            <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Upspring-Portfolio"> Source Code </a>
+          </div>
         </div>
+        <div class="portfolio_row reveal">
+          <div class="portfolio_left">
+            <h3>Horizon Portfolio</h3>
+            <h4>Web Development</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. </p>
+            <a class="button-5" href="#!"> See Live </a>
+            <a rel="noreferrer" target="_blank" class="button-6 no_demo" href="https://github.com/cbarnett427/Horizon-Portfolio"> Source Code </a>
+          </div>
+          <div class="portfolio_right">
+              <img src="img/HorizonExample.png" alt="" />
+          </div>
       </div>
       <div class="portfolio_row reveal">
         <div class="portfolio_left">
-          <img src="img/UpspringExample.png" alt="" />
+          <img src="img/PyxifyExample.png" alt="" />
         </div>
         <div class="portfolio_right">
-          <h3>Upspring Portfolio</h3>
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. </p>
-          <a rel="noreferrer" target="_blank" class="button-5" href="https://cbarnett427.github.io/Upspring-Portfolio/"> See Live </a>
-          <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Upspring-Portfolio"> Source Code </a>
-        </div>
-      </div>
-      <div class="portfolio_row reveal">
-        <div class="portfolio_left">
-          <h3>Horizon Portfolio</h3>
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. </p>
+          <h3>Pyxify Web Browser</h3>
+          <h4>Software Development</h4>
+          <p>Simplify browsing and enjoy a truly clean, safe and unique experience with Pyxify, a Python-based web browser. Pyxify is equipped with a fully responsive landing page, new tab page, quick links and the current time. Runs on any python compatible operating system. Fully responsive UI for an engaging conversation experience. </p>
           <a class="button-5" href="#!"> See Live </a>
-          <a rel="noreferrer" target="_blank" class="button-6 no_demo" href="https://github.com/cbarnett427/Horizon-Portfolio"> Source Code </a>
+          <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Pyxify-Web-Browser"> Source Code </a>
         </div>
-        <div class="portfolio_right">
-            <img src="img/HorizonExample.png" alt="" />
-        </div>
-    </div>
-    <div class="portfolio_row reveal">
-      <div class="portfolio_left">
-        <img src="img/PyxifyExample.png" alt="" />
       </div>
-      <div class="portfolio_right">
-        <h3>Pyxify Web Browser</h3>
-        <h4>Software Development</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. </p>
-        <a class="button-5" href="#!"> See Live </a>
-        <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Pyxify-Web-Browser"> Source Code </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Footer Section -->
-  <footer class="footer-distributed">
-		<div class="footer-right">
-			<a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-			<a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-			<a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-			<p id="WithLove">Made with <i class="fa-solid fa-heart"></i></p>
-		</div>
-		<div class="footer-left">
-			<p class="footer-links">
-				<a class="link-1" href="#home">Home</a>
-				<a href="#about">About</a> <a href="#skills">Skills</a>
-				<a href="#portfolio">Portfolio</a>
-			</p>
-			<p>Handcrafted by Clayton Barnett <i class="fa-regular fa-copyright"></i> 2022</p>
-		</div>
-	</footer>
-  
-  <script src="js/main.js"></script>
+    <!-- ========== Footer Section ========== -->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <p id="WithLove">Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+              <a class="link-1" href="#home">Home</a>
+              <a href="#about">About</a> <a href="#skills">Skills</a>
+              <a href="#portfolio">Portfolio</a>
+            </p>
+            <p>Handcrafted by Clayton Barnett <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+      </footer>
+
+
+    <!-- ========== Contact Modal Section ========== -->
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+      <span>Contact Me</span>
+      </h2>
+      <form class="modal__form" action="email.php" method="post" name="contactform">
+        <label for="full">Name</label>
+        <input maxlength="50" name="full_name" id="full" size="30" type="text" required placeholder="Enter your name"/>
+        <label for="emailadr">Email</label>
+        <input maxlength="80" name="email" id="emailadr" size="30" type="email" required placeholder="Enter your email"/>
+        <label id="msg" for="msg">Message</label>
+        <textarea cols="25" maxlength="1000" id="msg" name="comments" rows="5" required placeholder="Enter your message"></textarea>
+        <button class="button-5">Submit&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
 </body>
 </html>
