@@ -5,9 +5,9 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "cbarnett427@live.com";
+    $email_to = "example@gmail.com";
  
-    $email_subject = "claytonbarnett.com - Contact Form Submission";
+    $email_subject = "www.example.com - Contact Form Submission";
  
      
  
@@ -24,7 +24,7 @@ if(isset($_POST['email'])) {
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Clayton Barnett | Whoops...</title>
+          <title>Jonathan Smith | Whoops...</title>
           <!-- ========== Internal Links ========== -->
           <link rel="stylesheet" type="text/css" href="css/thankyou.css" media="screen"/>
         </head>
@@ -76,7 +76,7 @@ if(isset($_POST['email'])) {
         </style>
         <body>
           <footer class="site_footer" id="footer">
-          <a href="https://claytonbarnett.com" class="btn"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+          <a href="www.example.com" class="btn"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
           </footer>
         </body>
         </html>';
@@ -140,7 +140,7 @@ $headers = 'From: '.$email_from."\r\n".
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Clayton Barnett | Thank You!</title>
+	<title>Jonathan Smith | Thank You!</title>
   <!-- ========== Internal Links ========== -->
 	<link rel="stylesheet" href="css\thankyou.css">
 </head>
@@ -157,7 +157,7 @@ $headers = 'From: '.$email_from."\r\n".
 
   <script type="text/javascript">
     var count = 10;
-    var redirect = "https://claytonbarnett.com";
+    var redirect = "www.example.com";
     function countDown() {
     if(count >= 0){
       document.getElementById("timer").innerHTML = count--;
